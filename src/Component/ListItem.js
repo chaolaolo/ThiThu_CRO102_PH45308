@@ -32,12 +32,12 @@ const ListItem = ({ xe, onDelete, onEdit }) => {
     };
     return (
         <View style={styles.item}>
-            <Image source={{ uri: xe.hinh_anh_ph46164 }} style={styles.image} />
+            <Image source={{ uri: xe.hinh_anh_ph45308 }} style={styles.image} />
             <View style={{ marginHorizontal: 10, width: '100%', justifyContent: 'center',flex:1 }}>
-                <Text style={styles.title}>{xe.ten_xe_ph46164}</Text>
-                <Text>{xe.mau_sac_ph46164}</Text>
-                <Text>{xe.gia_ban_ph46164}</Text>
-                <Text>{xe.mo_ta_ph46164}</Text>
+                <Text style={styles.title}>{xe.ten_xe_ph45308}</Text>
+                <Text>{xe.mau_sac_ph45308}</Text>
+                <Text>{xe.gia_ban_ph45308}</Text>
+                <Text>{xe.mo_ta_ph45308}</Text>
                 <View style={{ flexDirection: 'row',marginTop:10 }}>
                     <TouchableOpacity onPress={() => onEdit(xe)} style={{ backgroundColor: 'lightgreen', justifyContent: 'center', alignItems: 'center', flex: 1, borderRadius: 10, paddingVertical: 10,marginHorizontal:2 }} >
                         <Text style={styles.button}>Sửa</Text>

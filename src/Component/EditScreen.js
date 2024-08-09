@@ -7,20 +7,20 @@ import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 const EditScreen = ({ route, navigation }) => {
     const { xe } = route.params;
     const dispatch = useDispatch();
-    const [tenXe, setTenXe] = useState(xe.ten_xe_ph46164);
-    const [mauSac, setMauSac] = useState(xe.mau_sac_ph46164);
-    const [giaBan, setGiaBan] = useState(xe.gia_ban_ph46164.toString());
-    const [moTa, setMoTa] = useState(xe.mo_ta_ph46164);
-    const [hinhAnh, setHinhAnh] = useState(xe.hinh_anh_ph46164);
+    const [tenXe, setTenXe] = useState(xe.ten_xe_ph45308);
+    const [mauSac, setMauSac] = useState(xe.mau_sac_ph45308);
+    const [giaBan, setGiaBan] = useState(xe.gia_ban_ph45308.toString());
+    const [moTa, setMoTa] = useState(xe.mo_ta_ph45308);
+    const [hinhAnh, setHinhAnh] = useState(xe.hinh_anh_ph45308);
 
     const handleUpdate = () => {
         dispatch(updateXeMay({
             id: xe.id,
-            ten_xe_ph46164: tenXe,
-            mau_sac_ph46164: mauSac,
-            gia_ban_ph46164: Number(giaBan),
-            mo_ta_ph46164: moTa,
-            hinh_anh_ph46164: hinhAnh,
+            ten_xe_ph45308: tenXe,
+            mau_sac_ph45308: mauSac,
+            gia_ban_ph45308: Number(giaBan),
+            mo_ta_ph45308: moTa,
+            hinh_anh_ph45308: hinhAnh,
         }));
         navigation.goBack();
     };

@@ -14,11 +14,11 @@ const AddScreen = ({ navigation }) => {
 
     const handleAdd = () => {
         dispatch(addXeMay({
-            ten_xe_ph46164: tenXe,
-            mau_sac_ph46164: mauSac,
-            gia_ban_ph46164: Number(giaBan),
-            mo_ta_ph46164: moTa,
-            hinh_anh_ph46164: hinhAnh,
+            ten_xe_ph45308: tenXe,
+            mau_sac_ph45308: mauSac,
+            gia_ban_ph45308: Number(giaBan),
+            mo_ta_ph45308: moTa,
+            hinh_anh_ph45308: hinhAnh,
         }));
         navigation.goBack();
     };
